@@ -2,7 +2,7 @@
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Dashboard') }}
-            <div class="text-3xl text-green-800">{{ Auth::user()->name }}, Bienvenido al gestor de tareas de Eduardo
+            <div class="text-3xl text-green-800">{{ $name }}, Bienvenido al gestor de tareas de Eduardo
             </div>
         </h2>
     </x-slot>
