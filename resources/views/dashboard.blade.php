@@ -13,14 +13,15 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
                     <div class="">Tienes {{ $count }} tarea/s registradas</div>
-                    @foreach ($tasks as $task)
+                    {{--Sustituimos el foreach llamando al componente @foreach ($tasks as $task)
                         <p>
                         <div class="mt-4 text-lg text-purple-800">{{ $task->title }} </div>
                         </p>
                         <p>
                         <div class="">{{ $task->description }} </div>
                         </p>
-                    @endforeach
+                    @endforeach- --}}
+                    @livewire('TasksComponent')
                 </div>
             </div>
         </div>
