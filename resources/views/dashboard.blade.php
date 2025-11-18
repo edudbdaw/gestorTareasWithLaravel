@@ -12,8 +12,8 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
-                    <div class="">Tienes {{ Auth::user()->tasks->count() }} tarea/s registradas</div>
-                    @foreach (Auth::user()->tasks as $task)
+                    <div class="">Tienes {{ $count }} tarea/s registradas</div>
+                    @foreach ($tasks as $task)
                         <p>
                         <div class="mt-4 text-lg text-purple-800">{{ $task->title }} </div>
                         </p>
