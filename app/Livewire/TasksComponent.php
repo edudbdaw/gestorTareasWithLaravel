@@ -77,9 +77,10 @@ class TasksComponent extends Component
         $this->title = '';
         $this->description = '';
     }
-
+    
     public function render()
     {
         return view('livewire.tasks-component');
     }
+    //Añadir TaskComponent
 }
